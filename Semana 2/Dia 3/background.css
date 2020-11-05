@@ -1,0 +1,14 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.seccion1{
+    background-color: aqua;
+    height: 300px;
+}
+
+.seccion2{
+height: 500px;
+background-image: url(./descarga_iphone.jpeg)
+}
