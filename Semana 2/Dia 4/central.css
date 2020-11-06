@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contenedor {
+  height: 600px;
+  width: 600px;
+  background-color: #555;
+  margin: 50px auto 0 auto;
+  box-shadow: 6px 6px 15px gray;
+}
+
+.circulo {
+  height: 100px;
+  width: 100px;
+  background-color: #ff2244;
+  border-radius: 50%;
+  position: relative;
+  left: calc(50% - 50px);
+  top: calc(50% - 50px);
+}
