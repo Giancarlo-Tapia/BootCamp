@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --color-primario: #dd7d0e;
+  --color-secundario: #f32a10;
+  --color-tres: #eee;
+}
+
+body {
+  background-color: var(--color-tres);
+  font-family: "Roboto", sans-serif;
+}
+
+header{
+    height: 54px;
+    background-color: var(--color-primario);
+    box-shadow: 0 5p 12px gray;
+}
+
+.cards{
+    padding:  20px 50px 50px 50px;
+    text-align: center;
+}

@@ -45,3 +45,27 @@ body {
   text-align: center;
   padding-top: 50px;
 }
+
+.contenedor_titulo {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.contenedor_boton {
+  cursor: pointer;
+  margin: 35px 0 0 0;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  background-color: #0270ee;
+  border-bottom: 4px solid darkgray;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.contenedor_boton:hover {
+  background-color: #3700ff;
+  font-weight: bold;
+  margin: 33px 0 0 0 ;
+  
+}
