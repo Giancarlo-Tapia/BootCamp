@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.contenedor {
+  display: flex;
+  height: 60px;
+
+  /*
+    justify-content: alinea los elementos en le eje principal
+    ¿cúal es el eje pricipal?
+
+    Todo depende de la propiedad:
+    flex-direction: row; (valor por defecto cuando se coloca fle)
+    row: Todos los hijos flexibles en una sola fila (uno al lado del otro)
+    row: El eje princiapl es el eje X (horizontal)
+
+    justify-content: center;
+    justify-content: around;
+    justify-content: space-between;
+    justify-content: space-evenly;
+
+    Cuando un hijo no tiene altura, asume la altura de su padre.
+    */
+
+  background-color: darkred;
+  justify-content: space-evenly;
+  /*
+  align-items: Es la propiedad que alinea los elementos en el eje secundario
+  ¿Cúal es el eje secundario?
+  - Cuandoc flex-direction:row => El eje secundario es Y
+  - Cuando flex-direction:column => El eje secudario es X
+  */
+  align-items: center;
+}
+
+.contenedor > div {
+  flex: 1;
+  height: 20px;
+}
+
+div.hijo-2 {
+  flex: 3;
+}
+
+.contenedor > div:nth-child(even) {
+  background-color: #eee;
+}
+
+.contenedor > div:nth-child(odd) {
+  background-color: #ccc;
+}
+
+.noticias {
+  background-color: rgb(195, 175, 199);
+  display: flex;
+  height: calc(100vh - 60px);
+}
+
+body {
+  min-height: 100vh;
+}
+
+.noticias__menu {
+  width: 240px;
+}
+
+.noticias__contenedor {
+  flex: 1;
+  display: flex;
+  /* 
+asumanmos que flex-direction:row;
+
+*/
+  /*
+Otra oropiedad por defecto en los padres flexibles es:
+flex-wrap: no-wrap;
+¿Qué significa?
+no-wrap: los elementos nuncan colapsan => es decir, generan nuevas filas
+wrap: los elementos colapsan  y forman otras filas
+*/
+  flex-wrap: wrap;
+  justify-content: safe;
+  align-content: flex-start;
+  /*
+align-content => Alinea los hijos flexibles cuando estos colapsan
+*/
+
+align-content: flex-start;
+}
+
+
+.noticias__noticia {
+  width: 200px;
+  background-color: cornflowerblue;
+  height: 200px;
+  margin: 20px;
+}
