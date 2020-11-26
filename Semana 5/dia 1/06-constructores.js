@@ -32,3 +32,19 @@ objNextJS.duraccion = "3 semanas";
 console.log(objReact);
 console.log(objNextJS);
  
+
+
+function Curso(_nombre ="", _nivel ="", _duracion = "", _precio = "", _temas = []){
+
+    let objCurso = {
+        nombre: _nombre,
+        nivel: _nivel,
+        nombreCompleto: function(){
+            return "Curso de " + objCurso.nombre + " - " + objCurso.nivel },
+        duraccion: _duraci,
+        precio: _precio,
+        temas: _temas,
+    }
+
+    return objCurso;
+ }
